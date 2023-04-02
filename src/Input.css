@@ -1,0 +1,48 @@
+.input-container {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #8c8c8c;
+  font-size: 18px;
+  font-weight: normal;
+  transform-origin: 0 0;
+  transition: all 0.2s ease-out;
+}
+
+.input-container.focused label,
+.input-container.shrink label {
+  font-size: 14px;
+  color: #000;
+  transform: translateY(-25px) scale(0.75);
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 10px 10px 5px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #8c8c8c;
+  font-size: 18px;
+  color: #000;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.2s ease-out;
+}
+
+.input-container.focused input {
+  border-color: #000;
+}
+
+.input-container input:focus {
+  border-color: #000;
+}
+
+.input-container.filled input {
+  border-color: #000;
+}
